@@ -12,7 +12,7 @@ require 'phpmailer/SMTP.php';
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 // $file = $_FILES['file'];
-
+// ENES ACARRRRR
 try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
