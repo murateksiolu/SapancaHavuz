@@ -1,0 +1,28 @@
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1025px,
+  xl: 1230px,
+  xxl: 1620px
+) !default;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 546px,
+  md: 713px,
+  lg: 990px,
+  xl: 1200px,
+  xxl: 1200px
+) !default;
+
+// Grid columns
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+$grid-row-columns:            6 !default;
+
+
+
+
+

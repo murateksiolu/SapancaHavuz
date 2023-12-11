@@ -1,0 +1,61 @@
+/*
+	Button Back To Top
+*/
+.tt-back-to-top{
+	font-size: 12px;
+	font-weight: 500;
+	z-index: 20;
+	font-family: $default_font2;
+	&:before{
+		font-family: $default_font_icon;
+		content: "\e903";
+		display: block;
+		font-size: 20px;
+		line-height: 1;
+		transition: top 0.2s linear;
+		position: relative;
+		transition: all $speed linear;
+	}
+	@media (min-width: $breakpoint_desktop){
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		transition: 0.4s;
+		width: 62px;
+		height: 62px;
+		background-color:$backToTop_desctope_bg;
+		color: $backToTop_desctope_text;
+		position: fixed;
+		bottom: -64px;
+		right: 5px;
+		border-radius: $radius;
+		&:before{
+			top: -1px;
+		}
+		&:hover{
+			background-color:$backToTop_desctope_bg_hover;
+			color: $backToTop_desctope_text_hover;
+			&:before{
+				top: -4px;
+			}
+		}
+		&.tt-show{
+			bottom: 50px;
+		}
+	}
+	@media (max-width: $breakpoint_mobile){
+		background:$backToTop_mobile_bg;
+		color: $backToTop_mobile_text;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding:5px 0 33px 0;
+		&:hover{
+			background:$backToTop_mobile_bg_hover;
+			color: $backToTop_mobile_text_hover;
+		}
+	}
+}

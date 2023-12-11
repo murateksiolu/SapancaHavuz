@@ -1,0 +1,36 @@
+.tt-iconbox{
+	position: absolute;
+	top: 47%;
+	left: 0;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	@media (min-width: 1401px){
+		width: 80px;
+	}
+	@media (min-width: 1024px) and (max-width: 1400px){
+		width: 50px;
+	}
+	@media (max-width: 1350px){
+		display: none;
+	}
+}
+.tt-iconbox__item{
+	display: inline-block;
+	padding: 10px 5px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	fill: $default_color01;
+	transition: fill $value_speed linear;
+	> *:first-child{
+		width: 16px;
+		height: auto;
+	}
+	&:hover{
+		fill: $default_color02;
+	}
+}

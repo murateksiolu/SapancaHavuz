@@ -1,0 +1,295 @@
+.tt-bg{
+	pointer-events: none;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 0;
+	background-size: cover;
+	background-position: 0 0;
+}
+/*
+	Index
+*/
+.bg-index-01{
+	width: 100%;
+	max-width: 1580px;
+	height: 1618px;
+	top: 61%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+		top: 96%;
+	}
+}
+.bg-index-02{
+	width: 100%;
+	max-width: 1728px;
+	height: 1626px;
+	top: 92%;
+	left: 0;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		left: -50%;
+		top: 97%;
+		background-size: 70%, 70%;
+	}
+	@include media-breakpoint-down(sm) {
+		top: 125%;
+		background-size: 45%, 45%;
+	}
+}
+.bg-index-03{
+	width: 100%;
+	max-width: 1468px;
+	height: 1719px;
+	top: 80%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		right:-7%;
+		top: 100%;
+		background-size: 87%, 87%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 90%, 90%;
+		top: 50%;
+	}
+}
+.bg-index-04{
+	width: 100%;
+	max-width: 1248px;
+	height: 1043px;
+	bottom: 0%;
+	left: 0;
+	background-size: inherit;
+	@media (max-width: 1700px){
+		left: -20%;
+	}
+	@media (max-width: 1300px){
+		left: -30%;
+	}
+	@include media-breakpoint-between(lg, xl) {
+		left: -40%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-position: left 250px;
+		background-size: 78%, 78%;
+	}
+	@include media-breakpoint-down(md) {
+		background-size: 97%, 97%;
+		background-position: left 50px;
+		width: calc(100% - 40%);
+		left: -40%;
+	}
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}
+/*
+	Blog
+*/
+.bg-blog-01{
+	width: 1281px;
+	height: 1352px;
+	top: 136px;
+	left: 0;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}
+.bg-blog-03{
+	width: 1365px;
+	height: 1460px;
+	top: 48%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+		top: 42%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}
+.tt-blog-02{
+	width: 100%;
+	height: 1043px;
+	left: 0;
+	bottom: 0px;
+	background-position: -100px -70px;
+	@media (max-width: 1300px){
+		display: none;
+	}
+}
+/*
+	About
+*/
+.bg-about-01{
+	width: 1175px;
+	height: 1188px;
+	top: -32%;
+	left: 0;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+		top: -10%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}
+.bg-about-02{
+	width: 954px;
+	height: 1157px;
+	top: -20%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+		top: -5%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+		top: 0%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}
+/*
+	Testimonials
+*/
+.bg-testimonials-01{
+	width: 1000px;
+	height: 1341px;
+	top: -33.2%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+		top: -20%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+		top: -10%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+		top: -0%;
+	}
+}
+/*
+	Services
+*/
+.bg-services-01{
+	width: 994px;
+	height: 1172px;
+	top: -79%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+		top: -50%;
+		right: -15%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+		top: -30%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+		top: -13%;
+	}
+}
+.bg-services-02{
+	width: 855px;
+	height: 1080px;
+	bottom: -193%;
+	left: 0;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+		bottom: -199%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}
+.bg-services-03{
+	width: 956px;
+	height: 1155px;
+	top: 44.2%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}
+/*
+	Services Item
+*/
+.bg-services02-01{
+	width: 1260px;
+	height: 1278px;
+	top: 18%;
+	left: 0;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}
+/*
+	Price
+*/
+.bg-price-01{
+	width: 1627px;
+	height: 1625px;
+	top: 0%;
+	right: 0;
+	background-position: right top;
+	@include media-breakpoint-between(lg, xl) {
+		background-size: 75%, 75%;
+	}
+	@include media-breakpoint-down(lg) {
+		background-size: 55%, 55%;
+		top: 10%;
+	}
+	@include media-breakpoint-down(sm) {
+		background-size: 45%, 45%;
+	}
+}

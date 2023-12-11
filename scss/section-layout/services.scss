@@ -1,0 +1,120 @@
+/*
+	Services Item
+*/
+.tt-services__wrapper{
+	margin-top: -10px;
+	@include media-breakpoint-up(lg) {
+		margin-bottom: -8px;
+	}
+	.tt-services{
+		margin-top: 10px;
+	}
+}
+.tt-services{
+	max-width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: block;
+	&.tt-services__color02{
+		.tt-services__icon{
+			background-color: $default_color02;
+		}
+	}
+	&:hover{
+		.tt-services__title{
+			color: $default_color01;
+		}
+		.tt-services__icon{
+			background-color: #ffffff;
+			fill: $default_color01;
+			&:before,
+			&:after{
+				animation: 1.2s amplitude infinite;
+				background-color: $default_color01;
+			}
+		}
+		&.tt-services__color02{
+			.tt-services__title{
+				color: $default_color02;
+			}
+			.tt-services__icon{
+				fill: $default_color02;
+				&:before,
+				&:after{
+					background-color: $default_color02;
+				}
+			}
+		}
+	}
+}
+.tt-services__icon{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 154px;
+	height: 154px;
+	margin-left: auto;
+	margin-right: auto;
+	fill: #ffffff;
+	font-size: 72px;
+	line-height: 1;
+	background-color: $default_color01;
+	border-radius: 50%;
+	position: relative;
+	> *{
+		width: 50%;
+	}
+	&:before,
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		z-index: -1;
+	}
+}
+.tt-services__title{
+	font-size: 28px;
+	line-height: 36px;
+	color: $default_color03;
+	font-family: $default_font02;
+	font-weight: 600;
+	margin-top: 27px;
+	width: 100%;
+	transition: color .2s linear;
+	& + *{
+		margin-top: 20px;
+	}
+}
+@include media-breakpoint-down(lg) {
+	.tt-services__icon{
+		width: 101px;
+		height: 101px;
+		font-size: 50px;
+	}
+	.tt-services__title{
+		font-size: 21px;
+		line-height: 29px;
+		margin-top: 17px;
+		& + *{
+			margin-top: 11px;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.tt-services__icon{
+		width: 93px;
+		height: 93px;
+		font-size: 50px;
+	}
+}

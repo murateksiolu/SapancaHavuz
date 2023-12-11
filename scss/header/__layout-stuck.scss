@@ -1,0 +1,16 @@
+/*
+	Header Layout Stuck
+*/
+.tt-stuck-header{
+	backface-visibility: hidden;
+	z-index: 20;
+	position: relative;
+	&.sticky-header{
+		background-color:#ffffff;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: fixed;
+		box-shadow:$shadow_md;
+	}
+}

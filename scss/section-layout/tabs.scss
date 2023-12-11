@@ -1,0 +1,114 @@
+/*
+	Tabs Sections
+*/
+/*
+	Tabs-Dafault
+*/
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+.tabs-dafault{
+	position: relative;
+	/*Tabs Nav*/
+	.tabs__nav{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		margin: -20px -10px 0;
+	}
+	.tabs__nav-item{
+		margin: 20px 10px 0;
+		padding: 39px 87px 35px;
+		font-size: 20px;
+		font-family: $default_font02;
+		font-weight: 600;
+		color: $default_color03;
+		background-color: #ffffff;
+		transition: background-color $value_speed linear, color $value_speed linear, box-shadow $value_speed linear;
+		box-shadow: $shadow_md;
+		cursor: pointer;
+		position: 	relative;
+		overflow: hidden;
+		span{
+			color: $default_color01;
+		}
+		&:hover{
+
+		}
+		&.active{
+			box-shadow:none;
+			color: #ffffff;
+			pointer-events: none;
+			background-color: $default_color01;
+			span{
+				color: #00aeff;
+			}
+			&:before{
+				content: '';
+				pointer-events: none;
+				opacity: .6;
+				background: radial-gradient(circle at 20% 15%, transparent 0, transparent 2px,rgba(255, 255, 255, 1) 3px,rgba(255, 255, 255, 1) 4px, transparent 4px),
+							radial-gradient(circle at 75% 44%, transparent 0, transparent 2px,rgba(255, 255, 255, 1) 3px,rgba(255, 255, 255, 1) 4px, transparent 4px),
+							radial-gradient(circle at 35% 24%, transparent 0, transparent 2px,rgba(255, 255, 255, 1) 3px,rgba(255, 255, 255, 1) 4px, transparent 4px),
+							radial-gradient(circle at 46% 52%, transparent 0, transparent 4px,rgba(255, 255, 255, 1) 5px,rgba(255, 255, 255, 1) 6px, transparent 6px);
+				width: 100%;
+				height: 300%;
+				top: 0;
+				left: 0;
+				position: absolute;
+				animation: bubbles 5s linear infinite both;
+			}
+		}
+		> *{
+			pointer-events:none;
+		}
+	}
+	.tabs__container-indent01{
+		padding: 85px 0 0 0;
+	}
+	/*Tabs Content*/
+	@include media-breakpoint-down(xl) {
+		.tabs__nav-item{
+			padding: 39px 52px 35px;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		.tabs__nav-item{
+			font-size: 16px;
+			padding: 24px 30px 22px;
+		}
+		.tabs__container-indent01{
+			padding: 59px 0 0 0;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.tabs__nav{
+			margin-top: -10px;
+		}
+		.tabs__nav-item{
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+		}
+		.tabs__container-indent01{
+			padding: 49px 0 0 0;
+		}
+	}
+}
+.tabs__layout-item:not(.active) {
+	display: none;
+}
+.tabs__layout-item.active {
+	display: block;
+	min-height: 100px;
+}
+
+

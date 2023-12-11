@@ -1,0 +1,34 @@
+#map{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	@include media-breakpoint-up(xl) {
+		border-bottom-left-radius: 50% 13%;
+		border-bottom-right-radius: 50% 13%;
+		margin-top: -60px;
+		height: 450px;
+	}
+	@include media-breakpoint-between(lg, xl) {
+		border-bottom-left-radius: 50% 3%;
+		border-bottom-right-radius: 50% 3%;
+		margin-top: -60px;
+		height: 450px;
+	}
+	@include media-breakpoint-down(lg) {
+		border-bottom-left-radius: 50% 3%;
+		border-bottom-right-radius: 50% 3%;
+		margin-top: -8px;
+		height: 245px;
+	}
+	@include media-breakpoint-down(md) {
+		border-bottom-left-radius: 50% 1%;
+		border-bottom-right-radius: 50% 1%;
+		margin-top: 0px;
+		height: 170px;
+	}
+	iframe{
+		width: 100%;
+		height: 100%;
+	}
+}

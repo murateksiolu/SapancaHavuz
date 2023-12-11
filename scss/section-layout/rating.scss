@@ -1,0 +1,44 @@
+/*
+	Rating
+*/
+.tt-rating{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-size: 11px;
+	line-height: 1;
+	color: #ff8400;
+	.icon-star-empty{
+		color: #f1f2f3;
+	}
+	@include media-breakpoint-up(lg) {
+		margin-left: -2px;
+		margin-right: -2px;
+		> *{
+			margin-left: 2px;
+			margin-right: 2px;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		margin-left: -1px;
+		margin-right: -1px;
+		> *{
+			margin-left: 1px;
+			margin-right: 1px;
+		}
+	}
+}
+.tt-rating_size-lg{
+	font-size: 16px;
+	@include media-breakpoint-up(lg) {
+		margin-left: -3px;
+		margin-right: -3px;
+		> *{
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 13px;
+	}
+}

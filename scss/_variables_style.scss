@@ -1,0 +1,47 @@
+/*
+	Global Settings
+*/
+/* Font Family*/
+$default_font01:									'Inter', sans-serif;
+$default_font02:									'Poppins', sans-serif;
+/* font icon*/
+$default_font_icon:									'font-icon';
+/* Global Color */
+$default_bg_color:									#ffffff;
+$default_text_color:								#555555;
+/* Colors */
+$default_color01:									#005395;
+$default_color02:									#ff8400;
+$default_color03:									#4c4c4c;
+$default_color04:									#00aeff;
+/* shadow */
+$shadow_sm:											0px 3px 7px rgba(197, 205, 216, 0.59);
+$shadow_md:											0px 34px 46px rgba(197, 205, 216, 0.3);
+$shadow_icon_color01:								0px 5px 10px rgba(0, 83, 149, 0.3);
+$shadow_icon_color02:								0px 5px 10px rgba(255, 132, 0, 0.3);
+
+
+/* title */
+$title_text01:										$default_color01;
+$title_text01:										$default_color02;
+$sections_title_colorLink:							$default_color03;
+
+/* button */
+$btn-01_colorbg:									$default_color01;
+$btn-01_colortext:									#fff;
+$btn-02_colorbg:									$default_color02;
+$btn-02_colortext:									#fff;
+
+/* radius */
+$radius_size01_lg:									60px;
+$radius_size01_md:									30px;
+
+$radius_size02_lg:									40px;
+$radius_size02_md:									30px;
+
+/* default speed animation */
+$value_speed:										0.3s;
+$border:											#f3f8fc;
+
+
+

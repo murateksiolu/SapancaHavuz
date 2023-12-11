@@ -1,0 +1,91 @@
+/*---------------------------------------*/
+/*--------   Table of contents   --------*/
+/*---------------------------------------*/
+/*
+1. Additional styles
+	1.1 variables
+	1.2 Bootstrap
+	1.3 Typography
+	1.4 External Module
+2. Header
+3. Sections Layout
+4. Footer
+5. Additional Modules
+	5.1 Modal
+	5.1 Back To Top
+---------------------------------------*/
+
+/*---------------------------------------*/
+/*--------   1. Additional styles  --------*/
+/*---------------------------------------*/
+/*-------  1.1 variables  --------*/
+@import "_variables_bootstrap.scss";
+@import "_variables_style.scss";
+/*-------  1.2 Bootstrap  --------*/
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+// Layout & components
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid.scss";
+/*-------  1.3 Typography  --------*/
+@import "typography/typography.scss";
+/*------  1.4 External Module  --------*/
+@import "../external/flatpickr/flatpickr.min.scss";
+@import "../external/perfect-scrollbar/perfect-scrollbar.scss";
+/*---------------------------------------*/
+/*--------     2. Header         --------*/
+/*---------------------------------------*/
+@import "../scss/header/header.scss";
+@import "../scss/header/pagetitle.scss";
+/*---------------------------------------*/
+/*--------   3. Sections Layout      --------*/
+/*---------------------------------------*/
+@import "../scss/section-layout/section-title.scss";
+@import "../scss/section-layout/section-indent.scss";
+@import "../scss/section-layout/slider__main.scss";
+@import "../scss/section-layout/slider__default.scss";
+@import "../scss/section-layout/tabs.scss";
+@import "../scss/section-layout/filters.scss";
+@import "../scss/section-layout/iconbox.scss";
+@import "../scss/section-layout/iconbox-subpages.scss";
+@import "../scss/section-layout/promo01.scss";
+@import "../scss/section-layout/promo02.scss";
+@import "../scss/section-layout/promo03.scss";
+@import "../scss/section-layout/align-img.scss";
+@import "../scss/section-layout/signature.scss";
+@import "../scss/section-layout/box-info.scss";
+@import "../scss/section-layout/box-info02.scss";
+@import "../scss/section-layout/box-info03.scss";
+@import "../scss/section-layout/box-info04.scss";
+@import "../scss/section-layout/layout01.scss";
+@import "../scss/section-layout/layout02.scss";
+@import "../scss/section-layout/layout03.scss";
+@import "../scss/section-layout/box-wrapper01.scss";
+@import "../scss/section-layout/collapse-layout.scss";
+@import "../scss/section-layout/info-contact.scss";
+@import "../scss/section-layout/info-contact02.scss";
+@import "../scss/section-layout/news-item.scss";
+@import "../scss/section-layout/testimonials-item.scss";
+@import "../scss/section-layout/offers-item.scss";
+@import "../scss/section-layout/img-box.scss";
+@import "../scss/section-layout/img-box02.scss";
+@import "../scss/section-layout/img-box03.scss";
+@import "../scss/section-layout/box01.scss";
+@import "../scss/section-layout/pagination.scss";
+@import "../scss/section-layout/rating.scss";
+@import "../scss/section-layout/layout-video.scss";
+@import "../scss/section-layout/services.scss";
+@import "../scss/section-layout/services-single-page.scss";
+@import "../scss/section-layout/map.scss";
+@import "../scss/section-layout/counter.scss";
+@import "../scss/section-layout/bg.scss";
+/*---------------------------------------*/
+/*--------     4. Footer         --------*/
+/*---------------------------------------*/
+@import "../scss/footer/footer.scss";
+/*---------------------------------------*/
+/*---     5. Additional Modules  --------*/
+/*---------------------------------------*/
+@import "../scss/additional-modules/modal.scss";
+@import "../scss/additional-modules/back_to_top.scss";

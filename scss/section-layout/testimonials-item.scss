@@ -1,0 +1,219 @@
+.testimonials-item{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: flex-start;
+}
+.testimonials-item__img{
+	width: 72.2%;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+.testimonials-item__layout{
+	position: relative;
+	margin-top: 135px;
+	margin-left:0px;
+	width: 27.8%;
+	small{
+		display: block;
+		margin-top:29px;
+		font-size: 14px;
+		strong{
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+	&:before{
+		display: block;
+		content: '\e926';
+		font-family: 'font-icon';
+		position: absolute;
+		right: 70px;
+		top: -22px;
+		font-size: 80px;
+		line-height: 1;
+		color: $default_color01;
+	}
+}
+.testimonials-item__layout-wrapper{
+	background-color: #ffffff;
+	border-radius: 0px 0px 0px $radius_size01_lg;
+	padding: 77px 60px 72px 70px;
+	box-shadow: $shadow_md;
+	font-size: 18px;
+	line-height: 31px;
+	width: calc(100% + 107%);
+	margin-left: -107%;
+}
+.testimonials-item__title{
+	font-size: 28px;
+	line-height: 29px;
+	padding: 0 0 35px 0;
+	font-family: $default_font02;
+	& + *{
+		margin-top: 0;
+	}
+}
+
+.testimonials__title{
+	position: relative;
+	z-index: 3;
+	@include media-breakpoint-up(lg) {
+		padding: 0 0 0px 60px;
+	}
+	@include media-breakpoint-between(md, lg) {
+		padding: 0 0 0px 20px;
+	}
+	@include media-breakpoint-between(sm, md) {
+		padding: 0 0 0px 10px;
+	}
+	#bullets02{
+		margin-top: 0;
+		z-index: 2;
+	}
+}
+.testimonials-swiper{
+	.swiper-pagination{
+		display: none;
+	}
+}
+@include media-breakpoint-up(sm) {
+	.testimonials-swiper{
+		.swiper-slide{
+			opacity: 0;
+			transition: opacity 0.1s linear;
+			.testimonials-item__img{
+				opacity: 0;
+				transition: opacity 0.3s linear 0.3s;
+			}
+			.testimonials-item__layout{
+				opacity: 0;
+				transition: opacity 0.3s linear 0.5s, transform 0.5s linear 0.5s;
+				transform: translateX(40px);
+			}
+			&.swiper-slide-active{
+				opacity: 1;
+				.testimonials-item__img{
+					opacity: 1;
+				}
+				.testimonials-item__layout{
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1500px){
+	.testimonials-item__layout{
+		margin-top: 70px;
+	}
+	.testimonials-item__layout-wrapper{
+		padding: 72px 50px 67px 60px;
+		width: calc(100% + 117%);
+		margin-left: -117%;
+	}
+	.testimonials-item__layout{
+		&:before{
+			font-size: 70px;
+			right: 60px;
+		}
+	}
+}
+@include media-breakpoint-down(xl) {
+	.testimonials-item__layout{
+		font-size: 16px;
+		line-height: 27px;
+	}
+	.testimonials-item__layout-wrapper{
+		padding: 72px 40px 67px 50px;
+		width: calc(100% + 140%);
+		margin-left: -140%;
+	}
+}
+@include media-breakpoint-down(lg) {
+	.testimonials-item__title{
+		font-size: 21px;
+		padding-bottom: 13px;
+	}
+	.testimonials-item__layout-wrapper{
+		width: calc(100% + 210%);
+		margin-left: -210%;
+		border-radius: 0px 0px 0px $radius_size01_md;
+		padding: 36px 30px 42px 30px;
+		font-size: 16px;
+		line-height: 27px;
+	}
+	.testimonials-item__layout{
+		&:before{
+			font-size: 47px;
+			right: 25px;
+		}
+		small{
+			margin-top: 13px;
+			font-size: 13px;
+			line-height: 20px;
+			strong{
+				font-size: 15px;
+			}
+		}
+	}
+	.testimonials-item__img{
+		width: 79.2%;
+	}
+	.testimonials-item__layout{
+		width: 20.8%;
+	}
+}
+@include media-breakpoint-down(xxl) {
+	.testimonials-item__layout-wrapper{
+		border-radius: 0px 0px 0px 50px;
+		padding: 77px 50px 65px 55px;
+		width: calc(100% + 145%);
+		margin-left: -145%;
+	}
+}
+@include media-breakpoint-down(lg) {
+	.testimonials-item__layout-wrapper{
+		width: calc(100% + 270%);
+		margin-left: -270%;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.testimonials-item{
+		flex-wrap: wrap;
+	}
+	.testimonials-item__img{
+		width: 100%;
+	}
+	.testimonials-item__layout{
+		width: 100%;
+		margin: -124px 0 0 0;
+	}
+	.testimonials-item__layout-wrapper{
+		width: calc(100% - 15px);
+		margin: 0 0 0 15px;
+		padding: 36px 25px 42px;
+	}
+	.testimonials__title{
+		position: inherit;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+		.swiper-pagination{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			justify-content:center;
+		}
+	}
+	.testimonials-swiper{
+		padding-bottom: 38px;
+	}
+}

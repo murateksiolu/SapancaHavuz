@@ -1,0 +1,40 @@
+/* Visible */
+.tt-hide__table-only{
+	@include media-breakpoint-between(md, xl) {
+		display: none !important;
+	}
+}
+.tt-hide__table{
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+.tt-hide__mobile{
+	@include media-breakpoint-down(md) {
+		display: none !important;
+	}
+}
+.tt-visible__mobile{
+	display: none !important;
+	@include media-breakpoint-down(md) {
+		display: block !important;
+	}
+}
+.tt-visible__table{
+	@include media-breakpoint-up(md) {
+		display: none !important;
+	}
+}
+.tt-visible__mobile-sm{
+	display: none !important;
+	@include media-breakpoint-down(sm) {
+		display: block !important;
+	}
+}
+
+.tt-visible__descktop{
+	display: none !important;
+	@include media-breakpoint-up(lg) {
+		display: inline-block !important;
+	}
+}

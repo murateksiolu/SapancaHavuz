@@ -1,0 +1,85 @@
+/*
+	Pagination
+*/
+.tt-pagination__top{
+	margin-top: 50px;
+}
+.tt-pagination{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-end;
+	margin-top: -10px;
+	margin-left: -10px;
+	li{
+		margin-top: 10px;
+		margin-left: 10px;
+		a{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			width: 60px;
+			height: 60px;
+			font-weight: 800;
+			font-family: $default_font02;
+			transition: background-color .2s linear, color .2s linear;
+			&:not(.tt-pagination__btn):hover{
+				color:$default_color02;
+			}
+			&:not(.tt-pagination__btn){
+				color: $default_color01;
+				background-color: #f8f8fa;
+			}
+			@media (max-width: 1100px){
+				font-size: 13px;
+			}
+		}
+		&.active{
+			a:not(.tt-pagination__btn){
+				pointer-events:none;
+				background-color: $default_color01;
+				color: #ffffff;
+				border-radius:0 0 0 15px;
+			}
+		}
+	}
+	@include media-breakpoint-up(md) {
+		li{
+			a{
+				width: 60px;
+				height: 60px;
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		li{
+			a{
+				width: 46px;
+				height: 46px;
+			}
+		}
+	}
+}
+.tt-pagination__btn{
+	font-size: 22px;
+	color: $default_color01;
+	&:hover{
+		color:$default_color02;
+	}
+}
+
+.tt-pagination__top{
+	margin-top: 40px;
+	@include media-breakpoint-down(lg) {
+		margin-top: 30px;
+	}
+	@include media-breakpoint-down(md) {
+		margin-top: 25px;
+	}
+}
+

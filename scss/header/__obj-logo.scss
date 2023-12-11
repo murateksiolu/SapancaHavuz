@@ -1,0 +1,55 @@
+.tt-logo{
+	position: relative;
+	top: -3px;
+	svg{
+		width: 154px;
+		height: auto;
+	}
+	@include media-breakpoint-down(xxl) {
+		svg{width: 145px;}
+	}
+	@include media-breakpoint-down(lg) {
+		svg{width: 130px;}
+	}
+	@include media-breakpoint-down(md) {
+		top: -1px;
+		svg{width: 111px;}
+	}
+	.st0{fill:$default_color01;}
+	.st1{fill:$default_text_color;}
+	.st2{fill:$default_color04;}
+	.st3{fill:$default_color01;}
+}
+.st1{
+	animation-name: jumpUp;
+	animation-duration: 1.4s;
+	animation-direction: alternate;
+	animation-timing-function: steps(2, end);
+	animation-iteration-count: infinite;
+}
+.tt-delay-01{animation-delay: 0s;}
+.tt-delay-02{animation-delay: 0.1s;}
+.tt-delay-03{animation-delay: 0.15s;}
+.tt-delay-04{animation-delay: 0.2s;}
+.tt-delay-05{animation-delay: 0.25s;}
+.tt-delay-06{animation-delay: 0.3s;}
+.tt-delay-07{animation-delay: 0.35s;}
+.tt-delay-08{animation-delay: 0.4s;}
+.tt-delay-09{animation-delay: 0.45s;}
+.tt-delay-10{animation-delay: 0.5s;}
+@keyframes jumpUp{
+  20%,
+  100% {
+	transform: translate(0, 0px);
+	fill:$default_text_color;
+  }
+
+  0% {
+	transform: translate(0, -12px);
+	fill:$default_color04;
+  }
+  10% {
+	transform: translate(0, 0px);
+	fill:$default_text_color;
+  }
+}

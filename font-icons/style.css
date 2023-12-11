@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'font-icon';
+  src:  url('fonts/font-icon.eot?h1ceu7');
+  src:  url('fonts/font-icon.eot?h1ceu7#iefix') format('embedded-opentype'),
+    url('fonts/font-icon.ttf?h1ceu7') format('truetype'),
+    url('fonts/font-icon.woff?h1ceu7') format('woff'),
+    url('fonts/font-icon.svg?h1ceu7#font-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1621561:before {
+  content: "\e933";
+}
+.icon-2997:before {
+  content: "\e926";
+}
+.icon-733626:before {
+  content: "\e900";
+}
+.icon-733635:before {
+  content: "\e901";
+}
+.icon-780833:before {
+  content: "\e902";
+}
+.icon-787888:before {
+  content: "\e903";
+}
+.icon-833593:before {
+  content: "\e904";
+}
+.icon-853779:before {
+  content: "\e905";
+}
+.icon-992700:before {
+  content: "\e906";
+}
+.icon-1810659:before {
+  content: "\e907";
+}
+.icon-1828778:before {
+  content: "\e908";
+}
+.icon-1838983:before {
+  content: "\e909";
+}
+.icon-1928768:before {
+  content: "\e90a";
+}
+.icon-2089805:before {
+  content: "\e90b";
+}
+.icon-2111532:before {
+  content: "\e90c";
+}
+.icon-2236632:before {
+  content: "\e90d";
+}
+.icon-2438157:before {
+  content: "\e90e";
+}
+.icon-2558171:before {
+  content: "\e90f";
+}
+.icon-2919521:before {
+  content: "\e910";
+}
+.icon-2983736:before {
+  content: "\e911";
+}
+.icon-3021895:before {
+  content: "\e912";
+}
+.icon-medal:before {
+  content: "\e913";
+}
+.icon-shovel-1:before {
+  content: "\e914";
+}
+.icon-waterpolo:before {
+  content: "\e915";
+}
+.icon-wrench-and-screwdriver-crossed:before {
+  content: "\e916";
+}
+.icon-32195:before {
+  content: "\e917";
+}
+.icon-37663:before {
+  content: "\e918";
+}
+.icon-44334:before {
+  content: "\e919";
+}
+.icon-56786:before {
+  content: "\e91a";
+}
+.icon-59439:before {
+  content: "\e91b";
+}
+.icon-59660:before {
+  content: "\e91c";
+}
+.icon-126509:before {
+  content: "\e91d";
+}
+.icon-126516:before {
+  content: "\e91e";
+}
+.icon-142042:before {
+  content: "\e91f";
+}
+.icon-181311:before {
+  content: "\e920";
+}
+.icon-254434:before {
+  content: "\e921";
+}
+.icon-289780:before {
+  content: "\e922";
+}
+.icon-449467:before {
+  content: "\e924";
+}
+.icon-646094:before {
+  content: "\e925";
+}
+.icon-709674:before {
+  content: "\e927";
+}
+.icon-711217:before {
+  content: "\e928";
+}
+.icon-733464:before {
+  content: "\e929";
+}
+.icon-youtube:before {
+  content: "\e923";
+  color: #ce1312;
+}
+.icon-eye:before {
+  content: "\e9ce";
+}

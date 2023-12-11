@@ -1,0 +1,72 @@
+.tt-align-img{
+	position: absolute;
+	bottom: 0;
+	left: -27.9%;
+	z-index: 0;
+	@include media-breakpoint-down(xl) {
+		left: -37.9%;
+	}
+	@include media-breakpoint-down(lg) {
+		left: 0%;
+	}
+	@media (max-width: 952px){
+		left: -5%;
+		width: 45%;
+		img{
+			max-width: 100%;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		left: -13%;
+	}
+	@media (min-width: 576px) and (max-width: 767px){
+		img{
+			object-fit: fill;
+			width: auto;
+			height: 100%;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		padding-bottom: 27px;
+		display: block;
+	}
+}
+.tt-position__obj01{
+	position: relative;
+	.tt-position__obj01-pointer01{
+		@include media-breakpoint-up(sm) {
+			position: relative;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.tt-btn__video{
+			top: 5px;
+			right: 0px;
+			left:inherit;
+			transform: translateX(0%);
+		}
+	}
+}
+
+.tt-align-img02{
+	@include media-breakpoint-up(md) {
+		position: relative;
+		width: calc(100% + 40%);
+		margin-left: -63px;
+		margin-top: 40px;
+	}
+	@include media-breakpoint-up(lg) {
+		width: calc(100% + 45%);
+		margin-left: -33px;
+		margin-top: -20px;
+	}
+	@include media-breakpoint-up(xl) {
+		width: calc(100% + 65%);
+		margin-left: -13px;
+		margin-top: -40px;
+	}
+}

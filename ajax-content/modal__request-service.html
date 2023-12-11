@@ -1,0 +1,53 @@
+<div class="tt-modal__inner">
+	<h6 class="tt-modal__title">Telif Al</h6>
+	<p>
+		Tahminlerimiz ücretsiz, profesyonel ve adildir. Tahminlerin çoğu saha ziyareti gerektirir.
+	</p>
+	<form
+		id="schedule-form"
+		name="request-service-form"
+		class="tt-form"
+		data-src-handler="external/form/request-service-form.php"
+		data-form="validation"
+		method="post"
+		action="#"
+		enctype="multipart/form-data">
+		<div class="tt-form__group">
+			<input type="text" name="Ad" data-validate-field="empty" class="tt-form__control" id="inputName" placeholder=" Ad Soyad" enctype="multipart/form-data">
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="tt-form__group">
+					<input type="text" name="email" data-validate-field="email" class="tt-form__control" id="inputEmail" placeholder="E-mail">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="tt-form__group">
+					<input type="text" name="phonenumber" data-validate-field="number" class="tt-form__control" placeholder="Phone">
+				</div>
+			</div>
+		</div>
+		<div class="tt-form__group">
+			<input type="text" name="modalAddress" data-validate-field="empty" class="tt-form__control" id="modalAddress" placeholder="Adres">
+		</div>
+		<div class="tt-form__group">
+			<div class="row align-items-center modalAddress__custom-row">
+				<div class="col-auto">
+					<label class="tt-upload-label">Upload a video or photos</label>
+				</div>
+				
+			</div>
+		</div>
+		<div class="tt-form__group">
+			<textarea name="message" data-validate-field="empty" rows="4" class="tt-form__control" placeholder="Açıklama" data-validate-if="false"></textarea>
+		</div>
+		<div class="tt-form__btn">
+			<button type="submit" class="tt-btn tt-btn02">
+				<span class="tt-btn__text" data-effect="Teklif Al">Teklif Al</span>
+				<span class="tt-btn__icon icon-142042"></span>
+			</button>
+		</div>
+		<div class="tt-modal-message">Teşekkür ederim.<br> Form başarıyla gönderildi.<br> Temsilcimiz en kısa sürede sizinle iletişime geçecektir. İrtibatta olacağız!</div>
+
+	</form>
+</div>

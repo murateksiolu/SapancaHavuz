@@ -1,0 +1,71 @@
+/*
+	Info Contact
+*/
+.info-contact{
+	max-width: 570px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	.tt-icon-point{
+		margin-top: 47px;
+	}
+	> *{
+		margin-top: 0;
+	}
+}
+.tt-icon-point{
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: $default_color01;
+	font-size: 20px;
+	[class^="icon-"]{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		width: 55px;
+		height: 55px;
+		font-size: 15px;
+		border: 2px solid #e5edf4;
+		border-radius: 50%;
+		margin-right: 14px;
+		color: $default_color01;
+		background-color: #ffffff;
+		&:before{
+			position: relative;
+			top: 1px;
+		}
+	}
+	&:hover{
+		[class^="icon-"]{
+			 animation: 1200ms ease 0s normal none 1 running shake;
+		}
+	}
+}
+.tt-icon-point__top{
+	margin-top: 20px;
+}
+@include media-breakpoint-down(lg) {
+	.tt-icon-point{
+		font-size: 16px;
+		[class^="icon-"]{
+			width: 44px;
+			height: 44px;
+			font-size: 13px;
+			margin-right: 8px;
+		}
+	}
+	.info-contact{
+		max-width: 380px;
+		.tt-icon-point{
+			margin-top: 27px;
+		}
+	}
+}

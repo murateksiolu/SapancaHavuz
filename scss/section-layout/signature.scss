@@ -1,0 +1,32 @@
+.blockquote-signature{
+	> *:first-child{
+		margin-top: 0;
+	}
+	p{
+		font-weight: bold;
+	}
+}
+@include media-breakpoint-up(sm) {
+	.blockquote-signature__indent{
+		padding-right: 30px;
+	}
+}
+.blockquote-signature__footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	color: #929292;
+	font-size: 14px;
+	img{
+		margin-right: 14px;
+	}
+	@include media-breakpoint-up(lg) {
+		margin-top: 36px;
+	}
+	@include media-breakpoint-down(lg) {
+		margin-top: 17px;
+	}
+}
