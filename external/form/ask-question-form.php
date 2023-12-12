@@ -18,14 +18,14 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'mailwebsmirno@gmail.com';                     //SMTP username
-    $mail->Password   = 'mail0web_smirnoQ';                               //SMTP password
-    $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Username   = 'no-reply@eracochillers.com';                     //SMTP username
+    $mail->Password   = '314159Ea!';                               //SMTP password
+    $mail->SMTPSecure = "PHPMailer::ENCRYPTION_STARTTLS";            //Enable implicit TLS encryption
+    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('mailwebsmirno@gmail.com', 'Pool');
-    $mail->addAddress('youremail@gmail.com', 'Pool');     //Add a recipient
+    $mail->setFrom('no-reply@eracochillers.com', 'Sapanca Havuz');
+    $mail->addAddress('murateksicom@gmail.com', 'sapancahavuz.com');     //Add a recipient
 
     //Passed variables
     $name = $_POST['name'];
@@ -35,12 +35,12 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is what was sent Pool, form "Contact form"';
+    $mail->Subject = 'Sapancahavuz.com dan yeni bir soru geldi!';
     $mail->Body    =
-        'Name: ' .$name.
-        '<br>Phone: ' .$phonenumber.
+        'Ad Soyad: ' .$name.
+        '<br>Telefon: ' .$phonenumber.
         '<br>E-mail: ' .$email.
-        '<br>Question: ' .$message;
+        '<br>Soru: ' .$message;
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

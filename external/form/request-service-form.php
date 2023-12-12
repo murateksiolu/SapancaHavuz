@@ -25,8 +25,8 @@ try {
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('no-reply@eracochillers.com', 'Pool');
-    $mail->addAddress('murateksicom@gmail.com', 'Pool');     //Add a recipient
+    $mail->setFrom('no-reply@eracochillers.com', 'Sapanca Havuz');
+    $mail->addAddress('murateksicom@gmail.com', 'sapancahavuz.com');     //Add a recipient
 
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
@@ -42,7 +42,7 @@ try {
     //             $rfile[] = "Failed to attach file $filename";
     //         }
     //     }
-    };
+    // };
 
     //Passed variables
     $name = $_POST['name'];
@@ -56,15 +56,12 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is what was sent Pool, form "Request Services Modal"';
+    $mail->Subject = 'Sapancahavuz.com dan yeni bir teklif istegi geldi!';
     $mail->Body    =
-        'Name: ' .$name.
-        '<br>Phone: ' .$phonenumber.
+        'İsim: ' .$name.
+        '<br>Telefon: ' .$phonenumber.
         '<br>E-mail: ' .$email.
-        '<br>Address: ' .$address.
-        '<br>Services: ' .$services.
-        '<br>Data Visit: ' .$datavisit.
-        '<br>Timevisit: ' .$timevisit.
+        '<br>Adres: ' .$address.
         '<br>Message: ' .$message;
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

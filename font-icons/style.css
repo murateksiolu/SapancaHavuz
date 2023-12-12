@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'font-icon';
-  src:  url('fonts/font-icon.eot?h1ceu7');
-  src:  url('fonts/font-icon.eot?h1ceu7#iefix') format('embedded-opentype'),
-    url('fonts/font-icon.ttf?h1ceu7') format('truetype'),
-    url('fonts/font-icon.woff?h1ceu7') format('woff'),
-    url('fonts/font-icon.svg?h1ceu7#font-icon') format('svg');
+  font-family: "font-icon";
+  src: url("fonts/font-icon.eot?h1ceu7");
+  src: url("fonts/font-icon.eot?h1ceu7#iefix") format("embedded-opentype"),
+    url("fonts/font-icon.ttf?h1ceu7") format("truetype"),
+    url("fonts/font-icon.woff?h1ceu7") format("woff"),
+    url("fonts/font-icon.svg?h1ceu7#font-icon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'font-icon' !important;
+  font-family: "font-icon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -66,6 +67,9 @@
 }
 .icon-2089805:before {
   content: "\e90b";
+}
+.icon-instagram:before {
+  content: "\f16d";
 }
 .icon-2111532:before {
   content: "\e90c";
